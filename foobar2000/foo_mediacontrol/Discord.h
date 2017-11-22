@@ -10,6 +10,7 @@ DiscordRichPresence discordPresence;
 bool initialized = false;
 
 char oldState[256];
+char albumText[256];
 
 void handleDiscordReady() {}
 
@@ -76,6 +77,7 @@ void UpdatePresence(wchar_t *songname, wchar_t *artist, wchar_t *album)
 	discordPresence.largeImageText = albuminfo;
 	discordPresence.state = songinfo;
 	sprintf_s(oldState, 256, songinfo);
+	sprintf_s(albumText, 256, albuminfo);
 	discordPresence.instance = 1;
 	discordPresence.smallImageKey = "playing";
 	discordPresence.smallImageText = "Playing";
@@ -95,9 +97,11 @@ void UpdatePresenceState(char *state, char *stext)
 		char newState[256];
 		sprintf_s(newState, 256, "%s [%s]", oldState, stext);
 		discordPresence.state = newState;
+		discordPresence.largeImageText = albumText;
 	}
 	else {
 		discordPresence.state = oldState;
+		discordPresence.largeImageText = albumText;
 	}
 	
 	discordPresence.smallImageKey = state;
