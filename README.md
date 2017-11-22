@@ -3,7 +3,7 @@ Adds the ability for foobar2000 to interact with Discord rich presences.
 
 ### Screenshot
 ---------
-![Screenshot](https://i.imgur.com/nDhw6XN.png)
+![Screenshot](https://is.gd/6uKQMw)
 
 ### Installing
 ---------
