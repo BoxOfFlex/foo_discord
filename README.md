@@ -1,3 +1,6 @@
+# [JUST USE THE REGULAR REPO THANKS](https://github.com/NaamloosDT/foo_discord)
+
+~~
 # foo_discord
 Adds the ability for foobar2000 to interact with Discord rich presences.
 
@@ -23,3 +26,4 @@ Compilation requires Windows 10 SDK version 10.0.10240.0 or higher.
 ### License
 ----
 [BSD-2-Clause](https://github.com/NaamloosDT/foo_discord/blob/master/LICENSE)
+~~
